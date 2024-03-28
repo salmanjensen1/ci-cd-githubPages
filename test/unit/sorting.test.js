@@ -1,4 +1,4 @@
-const sorting = require("../src/sorting");
+const sorting = require("../../src/sorting");
 
 describe('selectionSort', () => {
     // BVA test cases for selectionSort

@@ -1,4 +1,4 @@
-const calculatorA = require("../src/advanced")
+const calculatorA = require("../../src/advanced")
 
 // BVA test cases for pow function
 describe('pow', () => {
@@ -8,7 +8,7 @@ describe('pow', () => {
         [2, 0, 1],    // exponent is zero
         [0, 2, 0],    // base is zero
         [2, 3, 8],    // typical positive values
-        [-2, 3, 8],  // typical negative base value with odd exponent
+        [-2, 3, -8],  // typical negative base value with odd exponent
         [-2, 4, 16],  // typical negative base value with even exponent
     ];
 
