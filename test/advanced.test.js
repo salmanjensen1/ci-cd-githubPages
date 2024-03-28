@@ -9,7 +9,7 @@ describe('pow', () => {
         [0, 2, 0],    // base is zero
         [2, 3, 8],    // typical positive values
         [-2, 3, -8],  // typical negative base value with odd exponent
-        [-2, 4, 17],  // typical negative base value with even exponent
+        [-2, 4, 16],  // typical negative base value with even exponent
     ];
 
     describe.each(BVAdata)
@@ -52,9 +52,9 @@ describe('modulo', () => {
         [0, -1, 0],   // dividend is zero with negative divisor
         [-1, 0, NaN], // negative dividend with zero divisor
         [1, 1, 0],    // typical positive values
-        [-1, 1, 0],   // typical negative dividend value with positive divisor
+        [-1, 1, -0],   // typical negative dividend value with positive divisor
         [1, -1, 0],   // typical positive dividend value with negative divisor
-        [-1, -1, 0],  // typical negative values for both dividend and divisor
+        [-1, -1, -0],  // typical negative values for both dividend and divisor
     ];
 
     describe.each(BVAdata)
@@ -74,7 +74,7 @@ describe('modulo', () => {
         [8, 3, 2],    // typical positive values
         [-8, 3, -2],  // typical negative dividend value
         [8, -3, 2],   // typical negative divisor value
-        [-8, -3, -8], // typical negative values for both dividend and divisor
+        [-8, -3, -2], // typical negative values for both dividend and divisor
     ];
 
     describe.each(DTdata)
