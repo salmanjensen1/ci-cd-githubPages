@@ -9,3 +9,5 @@ package-lock.json
 
 # Ignore any .env files containing sensitive information
 .env
+# stryker temp files
+.stryker-tmp
