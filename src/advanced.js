@@ -12,6 +12,7 @@ function modulo(a, b){
 
 console.log(pow(4, 3))
 console.log(modulo(9, 2))
+console.log(modulo(7, 3))
 
 module.exports={
     pow, modulo
